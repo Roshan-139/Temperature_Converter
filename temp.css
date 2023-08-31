@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 750px;
+    background: #483D8B;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    padding: 40px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+.Temperature-icon{
+    font-size: 45px;
+    color: #bf37cb;
+}
+h1{
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+/* for Mozila firefox */
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #7eae3f;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+.common{
+    display:flexbox
+}
+.button{
+    display: inline-block;
+    margin-top: 50px;
+    text-align: left; /* Change to center */
+}
+.con{
+    /* display:inline-block; */
+    margin-top: 50px;
+    margin-left:100px;
+    text-align: right; /* Change to center */
+    float: right;
+}
+.button button, .con button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block; /* Add this to prevent full-width buttons */
+}
+.button button:hover{
+    background: #000;
+    color: #fff;
+}
+.con button:hover{
+    background: #000;
+    color: #fff;
+}
